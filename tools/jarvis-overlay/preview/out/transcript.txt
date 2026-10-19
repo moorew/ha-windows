@@ -1,0 +1,28 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261019184937
+Username: runnervm0xl3a\runneradmin
+RunAs User: runnervm0xl3a\runneradmin
+Configuration Name: 
+Machine: runnervm0xl3a (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/jarvis-overlay/preview/run-preview.ps1
+Process ID: 9188
+PSVersion: 5.1.26100.33438
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.33438
+BuildVersion: 10.0.26100.33438
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+listening on 6054
+overlay connected
+PS>TerminatingError(): "Exception calling "CopyFromScreen" with "6" argument(s): "The value of argument 'value' (1087111200) is invalid for Enum type 'CopyPixelOperation'.
+Parameter name: value""
+>> TerminatingError(): "Exception calling "CopyFromScreen" with "6" argument(s): "The value of argument 'value' (1087111200) is invalid for Enum type 'CopyPixelOperation'.
+Parameter name: value""
+**********************
+Windows PowerShell transcript end
+End time: 20261019184943
+**********************
