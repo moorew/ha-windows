@@ -1,5 +1,5 @@
 screen: 1024x768
 powershell: 5.1.26100.33438
 session: 2  interactive: True
-overlay pid: 1036
+overlay pid: 496
 overlay still running after the stream closed: True
