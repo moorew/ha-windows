@@ -5,15 +5,33 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing, System.Windows.Forms
 New-Item -ItemType Directory -Path $Out -Force | Out-Null
 
+# BitBlt with CAPTUREBLT so layered (transparent) windows are included in the capture
+Add-Type -ReferencedAssemblies System.Drawing -TypeDefinition @'
+using System;
+using System.Runtime.InteropServices;
+public static class PreviewShot {
+    [DllImport("user32.dll")] static extern IntPtr GetDC(IntPtr hWnd);
+    [DllImport("user32.dll")] static extern int ReleaseDC(IntPtr hWnd, IntPtr hdc);
+    [DllImport("gdi32.dll")] static extern bool BitBlt(IntPtr dst, int x, int y, int w, int h, IntPtr src, int sx, int sy, int rop);
+    public static void Grab(System.Drawing.Bitmap bmp, int sx, int sy) {
+        using (var g = System.Drawing.Graphics.FromImage(bmp)) {
+            IntPtr dst = g.GetHdc();
+            IntPtr src = GetDC(IntPtr.Zero);
+            BitBlt(dst, 0, 0, bmp.Width, bmp.Height, src, sx, sy, 0x00CC0020 | 0x40000000);
+            ReleaseDC(IntPtr.Zero, src);
+            g.ReleaseHdc(dst);
+        }
+    }
+}
+'@
+
 function Snap([string]$name) {
     $b = [Windows.Forms.Screen]::PrimaryScreen.Bounds
     $w = [Math]::Min(1100, $b.Width); $h = [Math]::Min(600, $b.Height)
     $bmp = New-Object Drawing.Bitmap $w, $h
-    $g = [Drawing.Graphics]::FromImage($bmp)
-    $op = [Drawing.CopyPixelOperation]([int][Drawing.CopyPixelOperation]::SourceCopy -bor [int][Drawing.CopyPixelOperation]::CaptureBlt)
-    $g.CopyFromScreen($b.Right - $w, $b.Bottom - $h, 0, 0, (New-Object Drawing.Size $w, $h), $op)
+    [PreviewShot]::Grab($bmp, $b.Right - $w, $b.Bottom - $h)
     $bmp.Save((Join-Path $Out "$name.png"), [Drawing.Imaging.ImageFormat]::Png)
-    $g.Dispose(); $bmp.Dispose()
+    $bmp.Dispose()
     Write-Host "snap $name"
 }
 
