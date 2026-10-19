@@ -30,15 +30,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install "numpy>=1.24.0" --only-binary=:all:
           pip install -r requirements-windows.txt
-          pip install pytest pytest-asyncio hypothesis
+          pip install pytest pytest-asyncio pytest-timeout hypothesis
 
-      - name: Run tests on Windows
+      - name: Event stream tests
+        timeout-minutes: 5
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path ci-results | Out-Null
-          python -m pytest tests/test_event_stream.py -q -p no:cacheprovider *>&1 | Tee-Object -FilePath ci-results/event-stream-tests.txt
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          python -m pytest tests -q -p no:cacheprovider *>&1 | Tee-Object -FilePath ci-results/full-suite.txt
+          python -m pytest tests/test_event_stream.py -q -p no:cacheprovider --timeout=30 *>&1 | Tee-Object -FilePath ci-results/event-stream-tests.txt
+          exit $LASTEXITCODE
+
+      - name: Full test suite (informational)
+        timeout-minutes: 12
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          python -m pytest tests -q -p no:cacheprovider --timeout=60 *>&1 | Tee-Object -FilePath ci-results/full-suite.txt
           exit 0
 
       - name: Build single-file exe
