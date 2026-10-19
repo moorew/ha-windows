@@ -1,0 +1,47 @@
+name: Installer test
+
+on:
+  push:
+    branches: [installer-test]
+    paths-ignore:
+      - 'tools/jarvis-overlay/preview/install-out/**'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  install:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Fetch the built exe into Downloads
+        uses: actions/download-artifact@v7
+        with:
+          name: ha-assistant-windows-exe
+          run-id: 39310942170
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/artifact
+
+      - name: Stage it like a browser download
+        shell: pwsh
+        run: |
+          $dl = Join-Path $env:USERPROFILE 'Downloads'
+          New-Item -ItemType Directory -Force -Path $dl | Out-Null
+          Compress-Archive -Path "$env:RUNNER_TEMP/artifact/HomeAssistantWindows.exe" -DestinationPath (Join-Path $dl 'ha-assistant-windows-exe.zip') -Force
+
+      - name: Run the installer twice and collect results
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File tools/jarvis-overlay/preview/installer-test.ps1
+
+      - name: Commit results back
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f tools/jarvis-overlay/preview/install-out
+          git commit -m "Installer test results [skip ci]" || echo "nothing to commit"
+          git push
