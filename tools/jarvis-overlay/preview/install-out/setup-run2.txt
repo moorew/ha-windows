@@ -19,13 +19,13 @@
          Started ha-windows. Waiting for it to come up (first start can take 30 s or more)...
   [OK]   ha-windows is listening on 6053
   [OK]   Event stream listening on 127.0.0.1:6054
-  [OK]   Stream says: {"v": 1, "type": "hello", "ts": 1792438468.691, "device": "runnervm0xl3a", "version": "1.4.3", "protocol": 1, "phase": "idle"}
-  [OK]   Overlay: 2026-10-19 19:34:37  Connected to runnervm0xl3a (ha-windows 1.4.3, protocol 1)
+  [OK]   Stream says: {"v": 1, "type": "hello", "ts": 1792438657.158, "device": "runnervm0xl3a", "version": "1.4.3", "protocol": 1, "phase": "idle"}
+  [OK]   Overlay: 2026-10-19 19:37:46  Connected to runnervm0xl3a (ha-windows 1.4.3, protocol 1)
   [WARN] 4 ERROR line(s) in the ha-windows log:
-         2026-10-19 19:34:11,698 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
-         2026-10-19 19:34:19,728 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-         2026-10-19 19:34:27,734 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-         2026-10-19 19:34:36,947 - src.voice.audio_recorder - ERROR - Recording loop error
+         2026-10-19 19:37:20,103 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+         2026-10-19 19:37:28,148 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+         2026-10-19 19:37:36,157 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+         2026-10-19 19:37:45,352 - src.voice.audio_recorder - ERROR - Recording loop error
 
 Done. Say "Jarvis" to try it.
 Preview the look any time:  powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\runneradmin\AppData\Local\Programs\JarvisOverlay\jarvis-overlay.ps1" -Demo

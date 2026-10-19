@@ -19,13 +19,13 @@
          Started ha-windows. Waiting for it to come up (first start can take 30 s or more)...
   [OK]   ha-windows is listening on 6053
   [OK]   Event stream listening on 127.0.0.1:6054
-  [OK]   Stream says: {"v": 1, "type": "hello", "ts": 1792438410.398, "device": "runnervm0xl3a", "version": "1.4.3", "protocol": 1, "phase": "idle"}
-  [WARN] The overlay is running but hasn't logged a connection yet. Check C:\Users\runneradmin\AppData\Local\JarvisOverlay\overlay.log
+  [OK]   Stream says: {"v": 1, "type": "hello", "ts": 1792438621.449, "device": "runnervm0xl3a", "version": "1.4.3", "protocol": 1, "phase": "idle"}
+  [OK]   Overlay: 2026-10-19 19:37:10  Connected to runnervm0xl3a (ha-windows 1.4.3, protocol 1)
   [WARN] 4 ERROR line(s) in the ha-windows log:
-         2026-10-19 19:33:13,383 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
-         2026-10-19 19:33:21,422 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-         2026-10-19 19:33:29,429 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-         2026-10-19 19:33:38,617 - src.voice.audio_recorder - ERROR - Recording loop error
+         2026-10-19 19:36:44,503 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+         2026-10-19 19:36:52,553 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+         2026-10-19 19:37:00,562 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+         2026-10-19 19:37:09,776 - src.voice.audio_recorder - ERROR - Recording loop error
 
 Done. Say "Jarvis" to try it.
 Preview the look any time:  powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\runneradmin\AppData\Local\Programs\JarvisOverlay\jarvis-overlay.ps1" -Demo

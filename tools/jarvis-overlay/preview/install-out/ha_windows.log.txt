@@ -1,45 +1,47 @@
-2026-10-19 19:33:12,559 - src.main - INFO - Checking dependencies...
-2026-10-19 19:33:12,727 - src.main - INFO - Available dependencies:
-2026-10-19 19:33:12,727 - src.main - INFO -   OK aioesphomeapi (ESPHome protocol)
-2026-10-19 19:33:12,727 - src.main - INFO -   OK aiohttp (HTTP server)
-2026-10-19 19:33:12,727 - src.main - INFO -   OK sounddevice (Audio recording)
-2026-10-19 19:33:12,727 - src.main - INFO -   OK psutil (System monitoring)
-2026-10-19 19:33:12,727 - src.main - INFO -   OK zeroconf (mDNS discovery)
-2026-10-19 19:33:12,727 - src.main - INFO -   OK numpy (Audio processing)
-2026-10-19 19:33:12,729 - src.main - INFO - All dependencies OK!
-2026-10-19 19:33:13,344 - src.main - INFO - Already on latest version: 1.4.3
-2026-10-19 19:33:13,346 - src.main - INFO - ============================================================
-2026-10-19 19:33:13,346 - src.main - INFO - Device: runnervm0xl3a
-2026-10-19 19:33:13,346 - src.main - INFO - Version: 1.4.3
-2026-10-19 19:33:13,346 - src.main - INFO - ============================================================
-2026-10-19 19:33:13,346 - src.core.event_stream - INFO - Event stream listening on 127.0.0.1:6054
-2026-10-19 19:33:13,346 - src.main - INFO - Starting ESPHome API server...
-2026-10-19 19:33:13,357 - src.voice.wake_word - INFO - pymicro-wakeword available for wake word detection
-2026-10-19 19:33:13,358 - src.voice.wake_word - INFO - pyopen-wakeword available for wake word detection
-2026-10-19 19:33:13,366 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
-2026-10-19 19:33:13,366 - src.core.models - INFO - Loaded wakeup sound: C:\Users\RUNNER~1\AppData\Local\Temp\_MEI000016742\src\sounds\wake_word_triggered.flac
-2026-10-19 19:33:13,383 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
-2026-10-19 19:33:21,422 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
-2026-10-19 19:33:21,422 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-2026-10-19 19:33:29,429 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
-2026-10-19 19:33:29,429 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-2026-10-19 19:33:29,430 - src.core.esphome_protocol - INFO - Starting ESPHome API server @ 0.0.0.0:6053
-2026-10-19 19:33:29,430 - src.core.esphome_protocol - INFO - ESPHome API server started
-2026-10-19 19:33:29,430 - src.core.esphome_protocol - INFO - Listening address: 0.0.0.0:6053
-2026-10-19 19:33:29,430 - src.core.esphome_protocol - INFO - Device name: runnervm0xl3a
-2026-10-19 19:33:29,430 - src.core.esphome_protocol - INFO - Waiting for Home Assistant connection...
-2026-10-19 19:33:29,430 - src.main - INFO - Registering mDNS service broadcast...
-2026-10-19 19:33:29,431 - src.core.mdns_discovery - INFO - Registering mDNS service...
-2026-10-19 19:33:30,397 - src.core.event_stream - INFO - Event stream client connected (1 total)
-2026-10-19 19:33:30,453 - src.core.event_stream - INFO - Event stream client disconnected (0 left)
-2026-10-19 19:33:30,611 - src.core.mdns_discovery - INFO - mDNS service registered successfully!
-2026-10-19 19:33:30,611 - src.core.mdns_discovery - INFO - Device name: runnervm0xl3a
-2026-10-19 19:33:30,611 - src.core.mdns_discovery - INFO - Local IP: 10.1.0.112
-2026-10-19 19:33:30,611 - src.core.mdns_discovery - INFO - Listening port: 6053
-2026-10-19 19:33:30,611 - src.core.mdns_discovery - INFO - MAC address: 70:a8:a5:6a:f1:23
-2026-10-19 19:33:38,613 - src.core.audio_output - WARNING - pygame mixer re-init failed: WASAPI can't find requested audio endpoint: Element not found.
-2026-10-19 19:33:38,616 - src.ui.system_tray_icon - INFO - System tray icon started
-2026-10-19 19:33:38,617 - src.voice.audio_recorder - ERROR - Recording loop error
+2026-10-19 19:36:43,601 - src.main - INFO - Checking dependencies...
+2026-10-19 19:36:43,913 - src.main - INFO - Available dependencies:
+2026-10-19 19:36:43,914 - src.main - INFO -   OK aioesphomeapi (ESPHome protocol)
+2026-10-19 19:36:43,914 - src.main - INFO -   OK aiohttp (HTTP server)
+2026-10-19 19:36:43,914 - src.main - INFO -   OK sounddevice (Audio recording)
+2026-10-19 19:36:43,914 - src.main - INFO -   OK psutil (System monitoring)
+2026-10-19 19:36:43,914 - src.main - INFO -   OK zeroconf (mDNS discovery)
+2026-10-19 19:36:43,914 - src.main - INFO -   OK numpy (Audio processing)
+2026-10-19 19:36:43,963 - src.main - INFO - All dependencies OK!
+2026-10-19 19:36:44,435 - src.main - INFO - Already on latest version: 1.4.3
+2026-10-19 19:36:44,438 - src.main - INFO - ============================================================
+2026-10-19 19:36:44,438 - src.main - INFO - Device: runnervm0xl3a
+2026-10-19 19:36:44,438 - src.main - INFO - Version: 1.4.3
+2026-10-19 19:36:44,438 - src.main - INFO - ============================================================
+2026-10-19 19:36:44,438 - src.core.event_stream - INFO - Event stream listening on 127.0.0.1:6054
+2026-10-19 19:36:44,439 - src.main - INFO - Starting ESPHome API server...
+2026-10-19 19:36:44,458 - src.voice.wake_word - INFO - pymicro-wakeword available for wake word detection
+2026-10-19 19:36:44,460 - src.voice.wake_word - INFO - pyopen-wakeword available for wake word detection
+2026-10-19 19:36:44,468 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
+2026-10-19 19:36:44,468 - src.core.models - INFO - Loaded wakeup sound: C:\Users\RUNNER~1\AppData\Local\Temp\_MEI00000cc42\src\sounds\wake_word_triggered.flac
+2026-10-19 19:36:44,503 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+2026-10-19 19:36:52,553 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
+2026-10-19 19:36:52,553 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+2026-10-19 19:37:00,562 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
+2026-10-19 19:37:00,562 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+2026-10-19 19:37:00,563 - src.core.esphome_protocol - INFO - Starting ESPHome API server @ 0.0.0.0:6053
+2026-10-19 19:37:00,564 - src.core.event_stream - INFO - Event stream client connected (1 total)
+2026-10-19 19:37:00,564 - src.core.esphome_protocol - INFO - ESPHome API server started
+2026-10-19 19:37:00,564 - src.core.esphome_protocol - INFO - Listening address: 0.0.0.0:6053
+2026-10-19 19:37:00,564 - src.core.esphome_protocol - INFO - Device name: runnervm0xl3a
+2026-10-19 19:37:00,564 - src.core.esphome_protocol - INFO - Waiting for Home Assistant connection...
+2026-10-19 19:37:00,564 - src.main - INFO - Registering mDNS service broadcast...
+2026-10-19 19:37:00,565 - src.core.mdns_discovery - INFO - Registering mDNS service...
+2026-10-19 19:37:01,449 - src.core.event_stream - INFO - Event stream client connected (2 total)
+2026-10-19 19:37:01,456 - src.core.event_stream - INFO - Event stream client disconnected (1 left)
+2026-10-19 19:37:01,734 - src.core.event_stream - INFO - Event stream client disconnected (0 left)
+2026-10-19 19:37:01,767 - src.core.mdns_discovery - INFO - mDNS service registered successfully!
+2026-10-19 19:37:01,767 - src.core.mdns_discovery - INFO - Device name: runnervm0xl3a
+2026-10-19 19:37:01,767 - src.core.mdns_discovery - INFO - Local IP: 10.1.0.109
+2026-10-19 19:37:01,767 - src.core.mdns_discovery - INFO - Listening port: 6053
+2026-10-19 19:37:01,767 - src.core.mdns_discovery - INFO - MAC address: 7c:1e:52:e7:df:03
+2026-10-19 19:37:09,770 - src.core.audio_output - WARNING - pygame mixer re-init failed: WASAPI can't find requested audio endpoint: Element not found.
+2026-10-19 19:37:09,775 - src.ui.system_tray_icon - INFO - System tray icon started
+2026-10-19 19:37:09,776 - src.voice.audio_recorder - ERROR - Recording loop error
 Traceback (most recent call last):
   File "src\voice\audio_recorder.py", line 159, in _record_loop
   File "sounddevice.py", line 1458, in __init__
@@ -47,68 +49,69 @@ Traceback (most recent call last):
   File "sounddevice.py", line 2751, in _get_stream_parameters
   File "sounddevice.py", line 578, in query_devices
 sounddevice.PortAudioError: Error querying device -1
-2026-10-19 19:33:38,621 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
-2026-10-19 19:33:38,621 - src.main - INFO - Available wake words: ['Alexa', 'Choo Choo Homie', 'Hey Home Assistant', 'Hey Jarvis', 'hey_luna', 'Hey Mycroft', 'Okay Computer', 'Okay Nabu', 'Hey Rhasspy']
-2026-10-19 19:33:38,621 - src.main - INFO - 🔄 Initializing wake words: ['okay_nabu']
-2026-10-19 19:33:38,633 - src.main - INFO - 🎤 Now listening for: Okay Nabu
-2026-10-19 19:33:38,635 - src.main - INFO - 🎤 Wake word detection started (say one of: Okay Nabu)
-2026-10-19 19:33:39,241 - aiosendspin.client.listener - INFO - ClientListener started on port 8928, path /sendspin
-2026-10-19 19:33:40,405 - aiosendspin.client.listener - INFO - mDNS advertising client 'PyI-S4GMmyHT9MvgiBL7Ki7-2sIE-2BqNUD832vGuHY' on port 8928 with path /sendspin
-2026-10-19 19:33:40,405 - src.sendspin_player.player - INFO - Sendspin receiver started on ws://0.0.0.0:8928/sendspin (player 'runnervm0xl3a', id PyI-S4GMmyHT9MvgiBL7Ki7-2sIE-2BqNUD832vGuHY)
-2026-10-19 19:33:40,406 - src.main - INFO - 
-2026-10-19 19:33:40,406 - src.main - INFO - Device started and broadcasting on network!
-2026-10-19 19:33:40,406 - src.main - INFO - 
-2026-10-19 19:33:40,406 - src.main - INFO - In Home Assistant:
-2026-10-19 19:33:40,406 - src.main - INFO -   1. Settings > Devices & Services > Add Integration
-2026-10-19 19:33:40,407 - src.main - INFO -   2. Search 'ESPHome' or add manually
-2026-10-19 19:33:40,407 - src.main - INFO -   3. Device should be discovered
-2026-10-19 19:33:40,407 - src.main - INFO - 
-2026-10-19 19:33:40,407 - src.main - INFO - Press Ctrl+C to exit...
-2026-10-19 19:33:40,407 - src.main - INFO - 
-2026-10-19 19:34:10,991 - src.main - INFO - Checking dependencies...
-2026-10-19 19:34:11,163 - src.main - INFO - Available dependencies:
-2026-10-19 19:34:11,163 - src.main - INFO -   OK aioesphomeapi (ESPHome protocol)
-2026-10-19 19:34:11,163 - src.main - INFO -   OK aiohttp (HTTP server)
-2026-10-19 19:34:11,163 - src.main - INFO -   OK sounddevice (Audio recording)
-2026-10-19 19:34:11,163 - src.main - INFO -   OK psutil (System monitoring)
-2026-10-19 19:34:11,163 - src.main - INFO -   OK zeroconf (mDNS discovery)
-2026-10-19 19:34:11,163 - src.main - INFO -   OK numpy (Audio processing)
-2026-10-19 19:34:11,163 - src.main - INFO - All dependencies OK!
-2026-10-19 19:34:11,667 - src.main - INFO - Already on latest version: 1.4.3
-2026-10-19 19:34:11,668 - src.main - INFO - ============================================================
-2026-10-19 19:34:11,668 - src.main - INFO - Device: runnervm0xl3a
-2026-10-19 19:34:11,668 - src.main - INFO - Version: 1.4.3
-2026-10-19 19:34:11,668 - src.main - INFO - ============================================================
-2026-10-19 19:34:11,669 - src.core.event_stream - INFO - Event stream listening on 127.0.0.1:6054
-2026-10-19 19:34:11,669 - src.main - INFO - Starting ESPHome API server...
-2026-10-19 19:34:11,678 - src.voice.wake_word - INFO - pymicro-wakeword available for wake word detection
-2026-10-19 19:34:11,680 - src.voice.wake_word - INFO - pyopen-wakeword available for wake word detection
-2026-10-19 19:34:11,682 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
-2026-10-19 19:34:11,682 - src.core.models - INFO - Loaded wakeup sound: C:\Users\RUNNER~1\AppData\Local\Temp\_MEI00001b242\src\sounds\wake_word_triggered.flac
-2026-10-19 19:34:11,698 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
-2026-10-19 19:34:19,728 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
-2026-10-19 19:34:19,728 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-2026-10-19 19:34:27,734 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
-2026-10-19 19:34:27,734 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
-2026-10-19 19:34:27,735 - src.core.esphome_protocol - INFO - Starting ESPHome API server @ 0.0.0.0:6053
-2026-10-19 19:34:27,735 - src.core.event_stream - INFO - Event stream client connected (1 total)
-2026-10-19 19:34:27,736 - src.core.esphome_protocol - INFO - ESPHome API server started
-2026-10-19 19:34:27,736 - src.core.esphome_protocol - INFO - Listening address: 0.0.0.0:6053
-2026-10-19 19:34:27,736 - src.core.esphome_protocol - INFO - Device name: runnervm0xl3a
-2026-10-19 19:34:27,736 - src.core.esphome_protocol - INFO - Waiting for Home Assistant connection...
-2026-10-19 19:34:27,736 - src.main - INFO - Registering mDNS service broadcast...
-2026-10-19 19:34:27,737 - src.core.mdns_discovery - INFO - Registering mDNS service...
-2026-10-19 19:34:28,690 - src.core.event_stream - INFO - Event stream client connected (2 total)
-2026-10-19 19:34:28,694 - src.core.event_stream - INFO - Event stream client disconnected (1 left)
-2026-10-19 19:34:28,764 - src.core.event_stream - INFO - Event stream client disconnected (0 left)
-2026-10-19 19:34:28,939 - src.core.mdns_discovery - INFO - mDNS service registered successfully!
-2026-10-19 19:34:28,939 - src.core.mdns_discovery - INFO - Device name: runnervm0xl3a
-2026-10-19 19:34:28,939 - src.core.mdns_discovery - INFO - Local IP: 10.1.0.112
-2026-10-19 19:34:28,939 - src.core.mdns_discovery - INFO - Listening port: 6053
-2026-10-19 19:34:28,939 - src.core.mdns_discovery - INFO - MAC address: 70:a8:a5:6a:f1:23
-2026-10-19 19:34:36,942 - src.core.audio_output - WARNING - pygame mixer re-init failed: WASAPI can't find requested audio endpoint: Element not found.
-2026-10-19 19:34:36,946 - src.ui.system_tray_icon - INFO - System tray icon started
-2026-10-19 19:34:36,947 - src.voice.audio_recorder - ERROR - Recording loop error
+2026-10-19 19:37:09,784 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
+2026-10-19 19:37:09,784 - src.main - INFO - Available wake words: ['Alexa', 'Choo Choo Homie', 'Hey Home Assistant', 'Hey Jarvis', 'hey_luna', 'Hey Mycroft', 'Okay Computer', 'Okay Nabu', 'Hey Rhasspy']
+2026-10-19 19:37:09,785 - src.main - INFO - 🔄 Initializing wake words: ['okay_nabu']
+2026-10-19 19:37:09,810 - src.main - INFO - 🎤 Now listening for: Okay Nabu
+2026-10-19 19:37:09,815 - src.main - INFO - 🎤 Wake word detection started (say one of: Okay Nabu)
+2026-10-19 19:37:10,766 - src.core.event_stream - INFO - Event stream client connected (1 total)
+2026-10-19 19:37:10,770 - aiosendspin.client.listener - INFO - ClientListener started on port 8928, path /sendspin
+2026-10-19 19:37:11,962 - aiosendspin.client.listener - INFO - mDNS advertising client '3K3tgF7cIFTE8YiKIA-mDJaaJ9v2VzO0hhPIrb-1FnY' on port 8928 with path /sendspin
+2026-10-19 19:37:11,962 - src.sendspin_player.player - INFO - Sendspin receiver started on ws://0.0.0.0:8928/sendspin (player 'runnervm0xl3a', id 3K3tgF7cIFTE8YiKIA-mDJaaJ9v2VzO0hhPIrb-1FnY)
+2026-10-19 19:37:11,963 - src.main - INFO - 
+2026-10-19 19:37:11,963 - src.main - INFO - Device started and broadcasting on network!
+2026-10-19 19:37:11,964 - src.main - INFO - 
+2026-10-19 19:37:11,964 - src.main - INFO - In Home Assistant:
+2026-10-19 19:37:11,964 - src.main - INFO -   1. Settings > Devices & Services > Add Integration
+2026-10-19 19:37:11,964 - src.main - INFO -   2. Search 'ESPHome' or add manually
+2026-10-19 19:37:11,964 - src.main - INFO -   3. Device should be discovered
+2026-10-19 19:37:11,964 - src.main - INFO - 
+2026-10-19 19:37:11,964 - src.main - INFO - Press Ctrl+C to exit...
+2026-10-19 19:37:11,964 - src.main - INFO - 
+2026-10-19 19:37:19,322 - src.main - INFO - Checking dependencies...
+2026-10-19 19:37:19,634 - src.main - INFO - Available dependencies:
+2026-10-19 19:37:19,634 - src.main - INFO -   OK aioesphomeapi (ESPHome protocol)
+2026-10-19 19:37:19,634 - src.main - INFO -   OK aiohttp (HTTP server)
+2026-10-19 19:37:19,634 - src.main - INFO -   OK sounddevice (Audio recording)
+2026-10-19 19:37:19,634 - src.main - INFO -   OK psutil (System monitoring)
+2026-10-19 19:37:19,634 - src.main - INFO -   OK zeroconf (mDNS discovery)
+2026-10-19 19:37:19,634 - src.main - INFO -   OK numpy (Audio processing)
+2026-10-19 19:37:19,634 - src.main - INFO - All dependencies OK!
+2026-10-19 19:37:20,046 - src.main - INFO - Already on latest version: 1.4.3
+2026-10-19 19:37:20,049 - src.main - INFO - ============================================================
+2026-10-19 19:37:20,049 - src.main - INFO - Device: runnervm0xl3a
+2026-10-19 19:37:20,049 - src.main - INFO - Version: 1.4.3
+2026-10-19 19:37:20,049 - src.main - INFO - ============================================================
+2026-10-19 19:37:20,049 - src.core.event_stream - INFO - Event stream listening on 127.0.0.1:6054
+2026-10-19 19:37:20,049 - src.main - INFO - Starting ESPHome API server...
+2026-10-19 19:37:20,065 - src.voice.wake_word - INFO - pymicro-wakeword available for wake word detection
+2026-10-19 19:37:20,067 - src.voice.wake_word - INFO - pyopen-wakeword available for wake word detection
+2026-10-19 19:37:20,071 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
+2026-10-19 19:37:20,071 - src.core.models - INFO - Loaded wakeup sound: C:\Users\RUNNER~1\AppData\Local\Temp\_MEI000013502\src\sounds\wake_word_triggered.flac
+2026-10-19 19:37:20,103 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+2026-10-19 19:37:28,148 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
+2026-10-19 19:37:28,148 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+2026-10-19 19:37:36,157 - src.core.models - WARNING - pygame not available: WASAPI can't find requested audio endpoint: Element not found.
+2026-10-19 19:37:36,157 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+2026-10-19 19:37:36,158 - src.core.esphome_protocol - INFO - Starting ESPHome API server @ 0.0.0.0:6053
+2026-10-19 19:37:36,159 - src.core.event_stream - INFO - Event stream client connected (1 total)
+2026-10-19 19:37:36,159 - src.core.esphome_protocol - INFO - ESPHome API server started
+2026-10-19 19:37:36,159 - src.core.esphome_protocol - INFO - Listening address: 0.0.0.0:6053
+2026-10-19 19:37:36,159 - src.core.esphome_protocol - INFO - Device name: runnervm0xl3a
+2026-10-19 19:37:36,159 - src.core.esphome_protocol - INFO - Waiting for Home Assistant connection...
+2026-10-19 19:37:36,159 - src.main - INFO - Registering mDNS service broadcast...
+2026-10-19 19:37:36,160 - src.core.mdns_discovery - INFO - Registering mDNS service...
+2026-10-19 19:37:37,158 - src.core.event_stream - INFO - Event stream client connected (2 total)
+2026-10-19 19:37:37,164 - src.core.event_stream - INFO - Event stream client disconnected (1 left)
+2026-10-19 19:37:37,294 - src.core.event_stream - INFO - Event stream client disconnected (0 left)
+2026-10-19 19:37:37,343 - src.core.mdns_discovery - INFO - mDNS service registered successfully!
+2026-10-19 19:37:37,344 - src.core.mdns_discovery - INFO - Device name: runnervm0xl3a
+2026-10-19 19:37:37,344 - src.core.mdns_discovery - INFO - Local IP: 10.1.0.109
+2026-10-19 19:37:37,344 - src.core.mdns_discovery - INFO - Listening port: 6053
+2026-10-19 19:37:37,344 - src.core.mdns_discovery - INFO - MAC address: 7c:1e:52:e7:df:03
+2026-10-19 19:37:45,345 - src.core.audio_output - WARNING - pygame mixer re-init failed: WASAPI can't find requested audio endpoint: Element not found.
+2026-10-19 19:37:45,351 - src.ui.system_tray_icon - INFO - System tray icon started
+2026-10-19 19:37:45,352 - src.voice.audio_recorder - ERROR - Recording loop error
 Traceback (most recent call last):
   File "src\voice\audio_recorder.py", line 159, in _record_loop
   File "sounddevice.py", line 1458, in __init__
@@ -116,22 +119,22 @@ Traceback (most recent call last):
   File "sounddevice.py", line 2751, in _get_stream_parameters
   File "sounddevice.py", line 578, in query_devices
 sounddevice.PortAudioError: Error querying device -1
-2026-10-19 19:34:36,950 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
-2026-10-19 19:34:36,950 - src.main - INFO - Available wake words: ['Alexa', 'Choo Choo Homie', 'Hey Home Assistant', 'Hey Jarvis', 'hey_luna', 'Hey Mycroft', 'Okay Computer', 'Okay Nabu', 'Hey Rhasspy']
-2026-10-19 19:34:36,950 - src.main - INFO - 🔄 Initializing wake words: ['okay_nabu']
-2026-10-19 19:34:36,961 - src.main - INFO - 🎤 Now listening for: Okay Nabu
-2026-10-19 19:34:36,963 - src.main - INFO - 🎤 Wake word detection started (say one of: Okay Nabu)
-2026-10-19 19:34:37,484 - src.core.event_stream - INFO - Event stream client connected (1 total)
-2026-10-19 19:34:37,485 - aiosendspin.client.listener - INFO - ClientListener started on port 8928, path /sendspin
-2026-10-19 19:34:38,660 - aiosendspin.client.listener - INFO - mDNS advertising client 'PyI-S4GMmyHT9MvgiBL7Ki7-2sIE-2BqNUD832vGuHY' on port 8928 with path /sendspin
-2026-10-19 19:34:38,661 - src.sendspin_player.player - INFO - Sendspin receiver started on ws://0.0.0.0:8928/sendspin (player 'runnervm0xl3a', id PyI-S4GMmyHT9MvgiBL7Ki7-2sIE-2BqNUD832vGuHY)
-2026-10-19 19:34:38,661 - src.main - INFO - 
-2026-10-19 19:34:38,661 - src.main - INFO - Device started and broadcasting on network!
-2026-10-19 19:34:38,661 - src.main - INFO - 
-2026-10-19 19:34:38,662 - src.main - INFO - In Home Assistant:
-2026-10-19 19:34:38,662 - src.main - INFO -   1. Settings > Devices & Services > Add Integration
-2026-10-19 19:34:38,662 - src.main - INFO -   2. Search 'ESPHome' or add manually
-2026-10-19 19:34:38,662 - src.main - INFO -   3. Device should be discovered
-2026-10-19 19:34:38,662 - src.main - INFO - 
-2026-10-19 19:34:38,662 - src.main - INFO - Press Ctrl+C to exit...
-2026-10-19 19:34:38,662 - src.main - INFO - 
+2026-10-19 19:37:45,361 - src.voice.wake_word - INFO - Loaded 9 wake word models from built-in and user directories under C:\Users\runneradmin\AppData\Local\HomeAssistantWindows\WakeWordModels
+2026-10-19 19:37:45,361 - src.main - INFO - Available wake words: ['Alexa', 'Choo Choo Homie', 'Hey Home Assistant', 'Hey Jarvis', 'hey_luna', 'Hey Mycroft', 'Okay Computer', 'Okay Nabu', 'Hey Rhasspy']
+2026-10-19 19:37:45,361 - src.main - INFO - 🔄 Initializing wake words: ['okay_nabu']
+2026-10-19 19:37:45,383 - src.main - INFO - 🎤 Now listening for: Okay Nabu
+2026-10-19 19:37:45,387 - src.main - INFO - 🎤 Wake word detection started (say one of: Okay Nabu)
+2026-10-19 19:37:46,359 - src.core.event_stream - INFO - Event stream client connected (1 total)
+2026-10-19 19:37:46,361 - aiosendspin.client.listener - INFO - ClientListener started on port 8928, path /sendspin
+2026-10-19 19:37:47,587 - aiosendspin.client.listener - INFO - mDNS advertising client '3K3tgF7cIFTE8YiKIA-mDJaaJ9v2VzO0hhPIrb-1FnY' on port 8928 with path /sendspin
+2026-10-19 19:37:47,587 - src.sendspin_player.player - INFO - Sendspin receiver started on ws://0.0.0.0:8928/sendspin (player 'runnervm0xl3a', id 3K3tgF7cIFTE8YiKIA-mDJaaJ9v2VzO0hhPIrb-1FnY)
+2026-10-19 19:37:47,589 - src.main - INFO - 
+2026-10-19 19:37:47,589 - src.main - INFO - Device started and broadcasting on network!
+2026-10-19 19:37:47,589 - src.main - INFO - 
+2026-10-19 19:37:47,589 - src.main - INFO - In Home Assistant:
+2026-10-19 19:37:47,589 - src.main - INFO -   1. Settings > Devices & Services > Add Integration
+2026-10-19 19:37:47,589 - src.main - INFO -   2. Search 'ESPHome' or add manually
+2026-10-19 19:37:47,589 - src.main - INFO -   3. Device should be discovered
+2026-10-19 19:37:47,589 - src.main - INFO - 
+2026-10-19 19:37:47,589 - src.main - INFO - Press Ctrl+C to exit...
+2026-10-19 19:37:47,589 - src.main - INFO - 
