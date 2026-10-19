@@ -1,0 +1,113 @@
++++++++++++++++++++++++++++++++++++ Timeout +++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~ Stack of MainThread (6340) ~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pytest\__main__.py", line 9, in <module>
+    raise SystemExit(_console_main())
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\config\__init__.py", line 253, in _console_main
+    code = _main(prog=_get_prog_name(sys.argv))
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\config\__init__.py", line 229, in _main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_caller.py", line 197, in __call__
+    return self._hookexec(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_manager.py", line 183, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_execution.py", line 147, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\main.py", line 377, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\main.py", line 330, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\main.py", line 384, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_caller.py", line 197, in __call__
+    return self._hookexec(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_manager.py", line 183, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_execution.py", line 147, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\main.py", line 408, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_caller.py", line 197, in __call__
+    return self._hookexec(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_manager.py", line 183, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_execution.py", line 147, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\runner.py", line 139, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\runner.py", line 249, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\runner.py", line 361, in from_call
+    result: TResult | None = func()
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\runner.py", line 250, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_caller.py", line 197, in __call__
+    return self._hookexec(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_manager.py", line 183, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_execution.py", line 147, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\runner.py", line 184, in pytest_runtest_call
+    item.runtest()
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\python.py", line 1707, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_caller.py", line 197, in __call__
+    return self._hookexec(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_manager.py", line 183, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\pluggy\_execution.py", line 147, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\_pytest\python.py", line 167, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\a\ha-windows\ha-windows\tests\test_announcement.py", line 114, in test_preannounce_plays_before_main_announcement
+    @given(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\core.py", line 2247, in wrapped_test
+    state.run_engine()
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\core.py", line 1430, in run_engine
+    runner.run()
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\engine.py", line 1019, in run
+    self._run()
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\engine.py", line 1649, in _run
+    self.generate_new_test_cases()
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\engine.py", line 1359, in generate_new_test_cases
+    self.test_function(data)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\engine.py", line 599, in test_function
+    self.__stoppable_test_function(data)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\engine.py", line 448, in __stoppable_test_function
+    self._test_function(data)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\core.py", line 1227, in _execute_once_for_engine
+    result = self.execute_once(data)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\core.py", line 1165, in execute_once
+    result = self.test_runner(data, run)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\core.py", line 827, in default_executor
+    return function(data)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\core.py", line 1062, in run
+    kw, arglabels = context.prep_args_kwargs_from_strategies(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\control.py", line 202, in prep_args_kwargs_from_strategies
+    kwargs[k] = self.data.draw(s, observe_as=f"generate:{k}")
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\data.py", line 1360, in draw
+    v = unwrapped.do_draw(self)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\strategies\_internal\strings.py", line 246, in do_draw
+    return data.draw_string(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\data.py", line 1062, in draw_string
+    return self._draw("string", constraints, observe=observe, forced=forced)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\data.py", line 902, in _draw
+    value = getattr(self.provider, f"draw_{choice_type}")(**constraints)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\providers.py", line 1034, in draw_string
+    constant := self._maybe_draw_constant(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\providers.py", line 798, in _maybe_draw_constant
+    tuple(
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\providers.py", line 801, in <genexpr>
+    if choice_permitted(choice, constraints)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\choice.py", line 565, in choice_permitted
+    return all(ord(c) in constraints["intervals"] for c in choice)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\conjecture\choice.py", line 565, in <genexpr>
+    return all(ord(c) in constraints["intervals"] for c in choice)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\intervalsets.py", line 94, in __contains__
+    return any(start <= elem <= end for start, end in self.intervals)
+  File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\hypothesis\internal\intervalsets.py", line 94, in <genexpr>
+    return any(start <= elem <= end for start, end in self.intervals)
++++++++++++++++++++++++++++++++++++ Timeout +++++++++++++++++++++++++++++++++++

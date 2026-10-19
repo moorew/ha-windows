@@ -1,0 +1,223 @@
+9321 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.8
+9322 INFO: Python: 3.12.10
+9351 INFO: Platform: Windows-2025Server-10.0.26100-SP0
+9351 INFO: Python environment: C:\hostedtoolcache\windows\Python\3.12.10\x64
+9355 INFO: Removing temporary files and cleaning cache in C:\Users\runneradmin\AppData\Local\pyinstaller
+9359 WARNING: collect_data_files - skipping data collection for module 'sounddevice' as it is not a package.
+9360 WARNING: collect_data_files - skipping data collection for module 'webrtcvad' as it is not a package.
+9531 WARNING: collect_data_files - skipping data collection for module 'typing_extensions' as it is not a package.
+9531 WARNING: collect_dynamic_libs - skipping library collection for module 'sounddevice' as it is not a package.
+9531 WARNING: collect_dynamic_libs - skipping library collection for module 'webrtcvad' as it is not a package.
+185 INFO: Could not import comtypes.gen, trying to create it.
+185 INFO: Created comtypes.gen directory: 'C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\comtypes\gen'
+185 INFO: Writing __init__.py file: 'C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\comtypes\gen\__init__.py'
+187 INFO: Using writeable comtypes cache directory: 'C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\comtypes\gen'
+pygame 2.6.1 (SDL 2.28.4, Python 3.12.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+1126 WARNING: PawnIO is not installed - Many sensor will not be available.
+    Please install manually through one of the following methods:
+        1) Run the terminal command 'winget install PawnIO'
+        2) Download and run 'https://github.com/namazso/PawnIO.Setup/releases/latest/download/PawnIO_setup.exe'
+
+22952 INFO: Module search paths (PYTHONPATH):
+['D:\\a\\ha-windows\\ha-windows',
+ 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python312.zip',
+ 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\DLLs',
+ 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib',
+ 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64',
+ 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages',
+ 'D:\\a\\ha-windows\\ha-windows']
+pygame 2.6.1 (SDL 2.28.4, Python 3.12.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+23314 INFO: Appending 'binaries' from .spec
+23316 INFO: Appending 'datas' from .spec
+23347 INFO: checking Analysis
+23347 INFO: Building Analysis because Analysis-00.toc is non existent
+23347 INFO: Looking for Python shared library...
+23349 INFO: Using Python shared library: C:\hostedtoolcache\windows\Python\3.12.10\x64\python312.dll
+23349 INFO: Running Analysis Analysis-00.toc
+23349 INFO: Target bytecode optimization level: 0
+23349 INFO: Initializing module dependency graph...
+23349 INFO: Initializing module graph hook caches...
+23384 INFO: Analyzing modules for base_library.zip ...
+24667 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+25055 INFO: Processing standard module hook 'hook-math.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+25318 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+26437 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+28051 INFO: Caching module dependency graph...
+28097 INFO: Analyzing D:\a\ha-windows\ha-windows\src\__main__.py
+28179 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+28366 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+28611 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+29346 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+29680 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+29680 INFO: SetuptoolsInfo: initializing cached setuptools info...
+30593 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+30728 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+31022 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+32053 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+32446 INFO: Processing standard module hook 'hook-psutil.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+33034 INFO: Processing standard module hook 'hook-sounddevice.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+33101 INFO: Processing standard module hook 'hook-pystray.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+33393 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+33445 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+33465 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+33613 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+33965 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+34156 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+34453 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+34453 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+35148 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+36426 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+36488 INFO: Processing standard module hook 'hook-cryptography.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+37824 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+38259 INFO: Processing standard module hook 'hook-pygame.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\pygame\\__pyinstaller'
+38810 INFO: Processing standard module hook 'hook-clr.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\pythonnet\\_pyinstaller'
+38834 INFO: Processing standard module hook 'hook-clr_loader.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+38949 INFO: Processing standard module hook 'hook-pycparser.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+39119 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+39131 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39157 INFO: Processing pre-safe-import-module hook 'hook-jaraco.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39157 INFO: Setuptools: 'jaraco' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco'!
+39167 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39169 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+39308 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+39322 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39658 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+39660 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39669 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39669 INFO: Setuptools: 'backports' appears to be a partial setuptools-vendored copy - extending search paths to ['C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\setuptools\\_vendor\\backports', 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\backports']!
+39670 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+39670 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+39766 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+40268 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+40268 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+40762 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+40762 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+41679 INFO: Processing standard module hook 'hook-comtypes.client.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+44445 INFO: Processing standard module hook 'hook-orjson.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+44840 INFO: Analyzing hidden import 'webrtcvad'
+44842 INFO: Processing standard module hook 'hook-webrtcvad.py' from 'D:\\a\\ha-windows\\ha-windows\\hooks'
+44845 INFO: Analyzing hidden import 'src.ui.main_window'
+44847 INFO: Analyzing hidden import 'src.voice.vad'
+44854 INFO: Analyzing hidden import 'src.autostart'
+44860 INFO: Analyzing hidden import 'ifaddr.netifaces'
+44861 INFO: Analyzing hidden import 'ifaddr.test_ifaddr'
+44863 INFO: Analyzing hidden import 'PIL.AvifImagePlugin'
+44873 INFO: Analyzing hidden import 'PIL.BdfFontFile'
+44881 INFO: Analyzing hidden import 'PIL.BlpImagePlugin'
+44901 INFO: Analyzing hidden import 'PIL.BufrStubImagePlugin'
+44903 INFO: Analyzing hidden import 'PIL.ContainerIO'
+44907 INFO: Analyzing hidden import 'PIL.CurImagePlugin'
+44911 INFO: Analyzing hidden import 'PIL.DcxImagePlugin'
+44919 INFO: Analyzing hidden import 'PIL.DdsImagePlugin'
+44937 INFO: Analyzing hidden import 'PIL.EpsImagePlugin'
+44949 INFO: Analyzing hidden import 'PIL.FitsImagePlugin'
+44957 INFO: Analyzing hidden import 'PIL.FliImagePlugin'
+44961 INFO: Analyzing hidden import 'PIL.FpxImagePlugin'
+44969 INFO: Analyzing hidden import 'PIL.FtexImagePlugin'
+44971 INFO: Analyzing hidden import 'PIL.GbrImagePlugin'
+44974 INFO: Analyzing hidden import 'PIL.GdImageFile'
+44976 INFO: Analyzing hidden import 'PIL.GribStubImagePlugin'
+44978 INFO: Analyzing hidden import 'PIL.Hdf5StubImagePlugin'
+44980 INFO: Analyzing hidden import 'PIL.IcnsImagePlugin'
+45017 INFO: Analyzing hidden import 'PIL.IcoImagePlugin'
+45028 INFO: Analyzing hidden import 'PIL.ImImagePlugin'
+45040 INFO: Analyzing hidden import 'PIL.ImageEnhance'
+45048 INFO: Analyzing hidden import 'PIL.ImageGrab'
+45054 INFO: Analyzing hidden import 'PIL.ImageMath'
+45065 INFO: Analyzing hidden import 'PIL.ImageMorph'
+45071 INFO: Analyzing hidden import 'PIL.ImageTransform'
+45073 INFO: Analyzing hidden import 'PIL.ImtImagePlugin'
+45075 INFO: Analyzing hidden import 'PIL.IptcImagePlugin'
+45083 INFO: Analyzing hidden import 'PIL.McIdasImagePlugin'
+45085 INFO: Analyzing hidden import 'PIL.MicImagePlugin'
+45087 INFO: Analyzing hidden import 'PIL.MpegImagePlugin'
+45089 INFO: Analyzing hidden import 'PIL.MspImagePlugin'
+45095 INFO: Analyzing hidden import 'PIL.PSDraw'
+45099 INFO: Analyzing hidden import 'PIL.PalmImagePlugin'
+45109 INFO: Analyzing hidden import 'PIL.PcdImagePlugin'
+45111 INFO: Analyzing hidden import 'PIL.PcfFontFile'
+45119 INFO: Analyzing hidden import 'PIL.PdfImagePlugin'
+45167 INFO: Analyzing hidden import 'PIL.PixarImagePlugin'
+45169 INFO: Analyzing hidden import 'PIL.PsdImagePlugin'
+45179 INFO: Analyzing hidden import 'PIL.QoiImagePlugin'
+45189 INFO: Analyzing hidden import 'PIL.SgiImagePlugin'
+45195 INFO: Analyzing hidden import 'PIL.SpiderImagePlugin'
+45204 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+45205 INFO: Analyzing hidden import 'PIL.SunImagePlugin'
+45208 INFO: Analyzing hidden import 'PIL.TarIO'
+45210 INFO: Analyzing hidden import 'PIL.TgaImagePlugin'
+45217 INFO: Analyzing hidden import 'PIL.WalImageFile'
+45220 INFO: Analyzing hidden import 'PIL.WebPImagePlugin'
+45230 INFO: Analyzing hidden import 'PIL.WmfImagePlugin'
+45236 INFO: Analyzing hidden import 'PIL.XVThumbImagePlugin'
+45238 INFO: Analyzing hidden import 'PIL.XbmImagePlugin'
+45242 INFO: Analyzing hidden import 'PIL.XpmImagePlugin'
+45248 INFO: Analyzing hidden import 'PIL.__main__'
+45248 INFO: Analyzing hidden import 'PIL._tkinter_finder'
+45250 INFO: Analyzing hidden import 'PIL.report'
+45250 INFO: Analyzing hidden import 'pystray._info'
+45252 INFO: Analyzing hidden import 'aiosendspin.server'
+45812 INFO: Analyzing hidden import 'aiosendspin.server.clock'
+45813 INFO: Analyzing hidden import 'aiohttp.pytest_plugin'
+45934 INFO: Analyzing hidden import 'multidict._testcapi'
+45934 INFO: Analyzing hidden import 'idna.__main__'
+45940 INFO: Analyzing hidden import 'idna.codec'
+45946 INFO: Analyzing hidden import 'idna.compat'
+45946 INFO: Processing module hooks (post-graph stage)...
+45956 WARNING: Hidden import "pycparser.lextab" not found!
+45956 WARNING: Hidden import "pycparser.yacctab" not found!
+46055 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks'
+46055 INFO: Processing standard module hook 'hook-tzdata.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+46633 INFO: Performing binary vs. data reclassification (2540 entries)
+47416 INFO: Looking for ctypes DLLs
+47702 INFO: Analyzing run-time hooks ...
+47710 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+47712 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+47716 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+47718 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+47720 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+47720 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+47811 INFO: Creating base_library.zip...
+47835 INFO: Looking for dynamic libraries
+pygame init failed: WASAPI can't find requested audio endpoint: Element not found., falling back to winsound
+PawnIO is not installed - Many sensor will not be available.
+    Please install manually through one of the following methods:
+        1) Run the terminal command 'winget install PawnIO'
+        2) Download and run 'https://github.com/namazso/PawnIO.Setup/releases/latest/download/PawnIO_setup.exe'
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.12.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+61595 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\numpy.libs', 'C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Lib\\site-packages\\pygame']
+61595 INFO: Extra DLL search directories (PATH): []
+72093 INFO: Warnings written to D:\a\ha-windows\ha-windows\build\HomeAssistantWindows\warn-HomeAssistantWindows.txt
+72223 INFO: Graph cross-reference written to D:\a\ha-windows\ha-windows\build\HomeAssistantWindows\xref-HomeAssistantWindows.html
+72341 INFO: checking PYZ
+72341 INFO: Building PYZ because PYZ-00.toc is non existent
+72341 INFO: Building PYZ (ZlibArchive) D:\a\ha-windows\ha-windows\build\HomeAssistantWindows\PYZ-00.pyz
+73523 INFO: Building PYZ (ZlibArchive) D:\a\ha-windows\ha-windows\build\HomeAssistantWindows\PYZ-00.pyz completed successfully.
+73665 INFO: checking PKG
+73665 INFO: Building PKG because PKG-00.toc is non existent
+73665 INFO: Building PKG (CArchive) HomeAssistantWindows.pkg
+90595 INFO: Building PKG (CArchive) HomeAssistantWindows.pkg completed successfully.
+90656 INFO: Bootloader C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+90656 INFO: checking EXE
+90656 INFO: Building EXE because EXE-00.toc is non existent
+90656 INFO: Building EXE from EXE-00.toc
+90656 INFO: Copying bootloader EXE to D:\a\ha-windows\ha-windows\dist\HomeAssistantWindows.exe
+90661 INFO: Copying icon to EXE
+90663 INFO: Copying version information to EXE
+90666 INFO: Copying 0 resources to EXE
+90666 INFO: Embedding manifest in EXE
+90668 INFO: Appending PKG archive to EXE
+90709 INFO: Fixing EXE headers
+91054 INFO: Building EXE from EXE-00.toc completed successfully.
+91112 INFO: Build complete! The results are available in: D:\a\ha-windows\ha-windows\dist
+Building HomeAssistantWindows v1.4.3 for Windows (single-file mode)...
+Using spec file: HomeAssistantWindows.spec
+pygame 2.6.1 (SDL 2.28.4, Python 3.12.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+Build completed!
+Output file: dist/HomeAssistantWindows.exe
