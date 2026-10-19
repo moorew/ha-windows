@@ -1,0 +1,2 @@
+screen: 1024x768
+powershell: 5.1.26100.33438
