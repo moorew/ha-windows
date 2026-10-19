@@ -20,6 +20,11 @@ function Snap([string]$name) {
 $listener = New-Object Net.Sockets.TcpListener([Net.IPAddress]::Loopback, $Port)
 $listener.Start()
 Write-Host "listening on $Port"
+$deadline = (Get-Date).AddSeconds(90)
+while (-not $listener.Pending()) {
+    if ((Get-Date) -gt $deadline) { throw 'overlay never connected within 90 s' }
+    Start-Sleep -Milliseconds 200
+}
 $client = $listener.AcceptTcpClient()
 Write-Host 'overlay connected'
 $stream = $client.GetStream()

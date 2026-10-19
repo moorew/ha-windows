@@ -66,6 +66,11 @@ function Write-OverlayLog([string]$msg) {
     } catch {}
 }
 
+trap {
+    Write-OverlayLog ("Fatal: {0} (line {1})" -f $_.Exception.Message, $_.InvocationInfo.ScriptLineNumber)
+    exit 1
+}
+
 $mutexCreated = $false
 $mutex = New-Object System.Threading.Mutex($true, 'Local\JarvisOverlay', [ref]$mutexCreated)
 if (-not $mutexCreated -and -not $Demo) { Write-OverlayLog 'Already running; exiting'; exit 0 }
