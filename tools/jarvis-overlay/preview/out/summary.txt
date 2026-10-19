@@ -1,9 +1,5 @@
 screen: 1024x768
 powershell: 5.1.26100.33438
 session: 2  interactive: True
-overlay pid: 7324
-ERROR: Exception calling "CopyFromScreen" with "6" argument(s): "The value of argument 'value' (1087111200) is invalid for Enum type 'CopyPixelOperation'.
-Parameter name: value"
-at Snap, D:\a\ha-windows\ha-windows\tools\jarvis-overlay\preview\fake-server.ps1: line 14
-at <ScriptBlock>, D:\a\ha-windows\ha-windows\tools\jarvis-overlay\preview\fake-server.ps1: line 44
-at <ScriptBlock>, D:\a\ha-windows\ha-windows\tools\jarvis-overlay\preview\run-preview.ps1: line 25
+overlay pid: 1036
+overlay still running after the stream closed: True
