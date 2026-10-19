@@ -1,0 +1,6 @@
+﻿Home Assistant Windows.lnk
+  target: C:\Users\runneradmin\AppData\Local\Programs\HomeAssistantWindows\HomeAssistantWindows.exe
+  args: --event-port 6054
+Jarvis Overlay.lnk
+  target: C:\Windows\System32\conhost.exe
+  args: --headless "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "C:\Users\runneradmin\AppData\Local\Programs\JarvisOverlay\jarvis-overlay.ps1" -Port 6054

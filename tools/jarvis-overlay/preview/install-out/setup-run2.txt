@@ -1,0 +1,32 @@
+﻿
+== 1. ha-windows build with the event stream ==
+         Build: ha-windows 1.4.3 + event stream (moorew/ha-windows@59c861d, CI run 39310942170)
+         Using: C:\Users\runneradmin\Downloads\ha-assistant-windows-exe.zip
+  [OK]   SHA-256 verified: f7ab234db3d0962f87ce79b609d7a0f649774f134c9f6bf56c1ee567273b2af3
+
+== 2. Swap the exe ==
+  [OK]   Already installed
+
+== 3. ha-windows settings ==
+  [OK]   Built-in grey bubbles turned off (tray menu: Show Conversation Bubbles)
+  [OK]   Startup shortcut now starts ha-windows with --event-port 6054
+
+== 4. Overlay ==
+  [OK]   Overlay installed: C:\Users\runneradmin\AppData\Local\Programs\JarvisOverlay\jarvis-overlay.ps1
+  [OK]   Startup shortcut: C:\Users\runneradmin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Jarvis Overlay.lnk
+
+== 5. Start and check ==
+         Started ha-windows. Waiting for it to come up (first start can take 30 s or more)...
+  [OK]   ha-windows is listening on 6053
+  [OK]   Event stream listening on 127.0.0.1:6054
+  [OK]   Stream says: {"v": 1, "type": "hello", "ts": 1792438468.691, "device": "runnervm0xl3a", "version": "1.4.3", "protocol": 1, "phase": "idle"}
+  [OK]   Overlay: 2026-10-19 19:34:37  Connected to runnervm0xl3a (ha-windows 1.4.3, protocol 1)
+  [WARN] 4 ERROR line(s) in the ha-windows log:
+         2026-10-19 19:34:11,698 - src.core.models - ERROR - Failed to initialize volume interface: (-2147023728, 'Element not found.', (None, None, None, 0, None))
+         2026-10-19 19:34:19,728 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+         2026-10-19 19:34:27,734 - src.core.models - ERROR - No audio backend available (neither VLC nor pygame) - playback and volume control are disabled
+         2026-10-19 19:34:36,947 - src.voice.audio_recorder - ERROR - Recording loop error
+
+Done. Say "Jarvis" to try it.
+Preview the look any time:  powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\runneradmin\AppData\Local\Programs\JarvisOverlay\jarvis-overlay.ps1" -Demo
+Undo everything:            powershell -NoProfile -ExecutionPolicy Bypass -File "D:\a\ha-windows\ha-windows\tools\jarvis-overlay\jarvis-overlay-setup.ps1" -Uninstall
