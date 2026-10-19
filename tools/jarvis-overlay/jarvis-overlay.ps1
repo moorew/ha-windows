@@ -23,8 +23,8 @@ $Look = @{
     Ice        = '#7FE9FF'   # core and accents in listening / speaking
     Filament   = '#FFB547'   # core while thinking
     Fault      = '#FF6B6B'   # core on errors
-    Glass      = '#0A1A22'   # smoked-glass backing behind text and core
-    GlassAlpha = 0.80        # 0..1
+    Glass      = '#081419'   # smoked-glass backing behind text and core
+    GlassAlpha = 0.90        # 0..1 (lower lets more of the desktop show through)
     Reply      = '#EAFBFF'   # reply text
     Spoken     = '#8FB3C2'   # your words
     Font       = 'Bahnschrift'
@@ -109,8 +109,8 @@ $xaml = @"
       <ColumnDefinition Width="Auto"/>
     </Grid.ColumnDefinitions>
 
-    <Border x:Name="TextPanel" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,-10,0"
-            Padding="26,14,30,15" CornerRadius="16,2,2,16" MaxWidth="$($Look.TextWidth + 56)">
+    <Border x:Name="TextPanel" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,-52,0"
+            Padding="26,14,82,15" CornerRadius="16" MaxWidth="$($Look.TextWidth + 108)">
       <StackPanel>
         <TextBlock x:Name="StatusText" FontFamily="$($Look.Font)" FontStretch="SemiCondensed" FontWeight="Normal"
                    FontSize="$($Look.StatusSize)" Margin="0,0,0,4"/>
@@ -174,6 +174,7 @@ $ui.Glow.Color       = ConvertTo-Color $Look.Ice
 $ui.StatusText.Foreground = $accent
 $ui.SpokenText.Foreground = New-Object Windows.Media.SolidColorBrush (ConvertTo-Color $Look.Spoken)
 $ui.ReplyText.Foreground  = New-Object Windows.Media.SolidColorBrush (ConvertTo-Color $Look.Reply)
+$ui.ReplyText.FontWeight  = [Windows.FontWeight]::FromOpenTypeWeight(350)   # Bahnschrift SemiLight
 
 # Legibility over any wallpaper: a soft dark halo under the text.
 foreach ($tb in $ui.SpokenText, $ui.ReplyText, $ui.StatusText) {

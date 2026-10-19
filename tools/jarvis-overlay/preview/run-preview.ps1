@@ -31,7 +31,7 @@ try {
 } finally {
     if ($ov -and -not $ov.HasExited) { try { Stop-Process -Id $ov.Id -Force } catch {} }
     $log = Join-Path $env:LOCALAPPDATA 'JarvisOverlay\overlay.log'
-    if (Test-Path $log) { Copy-Item $log (Join-Path $out 'overlay.log') } else { 'no overlay.log written' | Add-Content $summary }
+    if (Test-Path $log) { Copy-Item $log (Join-Path $out 'overlay-log.txt') } else { 'no overlay.log written' | Add-Content $summary }
     Stop-Transcript | Out-Null
 }
 Get-Content $summary
