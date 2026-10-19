@@ -234,7 +234,7 @@ $ovLogStart = 0
 if (Test-Path -LiteralPath $OvLog) { $ovLogStart = (Get-Item -LiteralPath $OvLog).Length }
 Start-Process -FilePath $OvLnk
 $connected = $false
-for ($i = 0; $i -lt 20 -and -not $connected; $i++) {
+for ($i = 0; $i -lt 120 -and -not $connected; $i++) {   # first start compiles a little C#, allow up to a minute
     Start-Sleep -Milliseconds 500
     if (Test-Path -LiteralPath $OvLog) {
         $fs = [IO.File]::Open($OvLog, 'Open', 'Read', 'ReadWrite')
